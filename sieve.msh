@@ -2,7 +2,7 @@ aecho -n "Enter the last number to check for prime-iness: "
 read MAX
 while [ -n "$(echo ${MAX} | sed -E "s/[0-9]*//g")" -o ${MAX} -ge 274 ]
    if [ ${MAX} -ge 274 ]
-      aecho "Sorry, the line buffers are too long to hold that many numbers."
+      aecho "Sorry, the line buffers are too short to hold that many numbers."
       aecho -n "Please enter a number: "
    else
       aecho -n "'${MAX}' is not a number. Please enter a number: "
